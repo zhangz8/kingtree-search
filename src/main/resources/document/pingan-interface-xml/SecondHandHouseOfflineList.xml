@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<second_hand_house_offline_list xmlns="http://www.pinganfang.com/second_hand_house_offline">
+    <second_hand_house_offline>
+        <id>1</id>ta_house.houseid
+    </second_hand_house_offline>
+    <second_hand_house_offline>
+        <id>2</id>
+    </second_hand_house_offline>
+    <second_hand_house_offline>
+        <id>3</id>
+    </second_hand_house_offline>
+</second_hand_house_offline_list>

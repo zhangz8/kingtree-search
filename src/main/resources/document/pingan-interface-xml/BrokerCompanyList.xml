@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<broker_company_list xmlns="http://www.pinganfang.com/broker_company">
+    <broker_company>
+        <company_id>1</company_id>ta_company.comid
+        <city_name>上海</city_name>郑州
+        <company_name>平安好房</company_name>ta_company.companyname
+        <company_full_name>平安好房电子商务</company_full_name>ta_company.companyname
+    </broker_company>
+    <broker_company>
+        <company_id>2</company_id>
+        <city_name>上海</city_name>
+        <company_name>平安证券</company_name>
+    </broker_company>
+</broker_company_list>

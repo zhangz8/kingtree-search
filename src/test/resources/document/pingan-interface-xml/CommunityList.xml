@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<community_list xmlns="http://www.pinganfang.com/community">
+    <community>
+        <name>格林汉特小区</name>ta_estate.estatename
+        <city_name>上海</city_name>郑州
+        <region_name>浦东</region_name>ta_picearea.areaid
+        <sub_region_name>北蔡</sub_region_name>ta_picearea.areaid
+        <address>龙华中路</address>ta_estate.address
+    </community>
+    <community>
+        <name>叶楼坊</name>
+        <city_name>成都</city_name>
+        <region_name>青羊区</region_name>
+        <sub_region_name>二环</sub_region_name>
+        <address>中山南二路</address>
+    </community>
+</community_list>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kingtree.search.dao.TaSystemUserMapper" >
+  <resultMap id="BaseResultMap" type="com.kingtree.search.entity.TaSystemUser" >
+    <id column="uid" property="uid" jdbcType="VARCHAR" />
+    <result column="comid" property="comid" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="VARCHAR" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="chname" property="chname" jdbcType="VARCHAR" />
+    <result column="spell" property="spell" jdbcType="VARCHAR" />
+    <result column="email" property="email" jdbcType="VARCHAR" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="sphone" property="sphone" jdbcType="VARCHAR" />
+    <result column="adress" property="adress" jdbcType="VARCHAR" />
+    <result column="isadmin" property="isadmin" jdbcType="VARCHAR" />
+    <result column="isuse" property="isuse" jdbcType="VARCHAR" />
+    <result column="createdate" property="createdate" jdbcType="TIMESTAMP" />
+    <result column="modidate" property="modidate" jdbcType="TIMESTAMP" />
+    <result column="flagdeleted" property="flagdeleted" jdbcType="VARCHAR" />
+    <result column="usertype" property="usertype" jdbcType="INTEGER" />
+    <result column="device" property="device" jdbcType="VARCHAR" />
+    <result column="userid" property="userid" jdbcType="VARCHAR" />
+    <result column="channelid" property="channelid" jdbcType="VARCHAR" />
+    <result column="flagbind" property="flagbind" jdbcType="BIT" />
+    <result column="sid" property="sid" jdbcType="VARCHAR" />
+    <result column="sidtoken" property="sidtoken" jdbcType="VARCHAR" />
+    <result column="subid" property="subid" jdbcType="VARCHAR" />
+    <result column="subtoken" property="subtoken" jdbcType="VARCHAR" />
+    <result column="butlerstyle" property="butlerstyle" jdbcType="VARCHAR" />
+    <result column="wxopenid" property="wxopenid" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    uid, comid, type, sex, username, password, chname, spell, email, mobile, sphone, 
+    adress, isadmin, isuse, createdate, modidate, flagdeleted, usertype, device, userid, 
+    channelid, flagbind, sid, sidtoken, subid, subtoken, butlerstyle, wxopenid
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from ta_systemuser
+    where uid = #{uid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from ta_systemuser
+    where uid = #{uid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.kingtree.search.entity.TaSystemUser" >
+    insert into ta_systemuser (uid, comid, type, 
+      sex, username, password, 
+      chname, spell, email, 
+      mobile, sphone, adress, 
+      isadmin, isuse, createdate, 
+      modidate, flagdeleted, usertype, 
+      device, userid, channelid, 
+      flagbind, sid, sidtoken, 
+      subid, subtoken, butlerstyle, 
+      wxopenid)
+    values (#{uid,jdbcType=VARCHAR}, #{comid,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, 
+      #{sex,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{chname,jdbcType=VARCHAR}, #{spell,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
+      #{mobile,jdbcType=VARCHAR}, #{sphone,jdbcType=VARCHAR}, #{adress,jdbcType=VARCHAR}, 
+      #{isadmin,jdbcType=VARCHAR}, #{isuse,jdbcType=VARCHAR}, #{createdate,jdbcType=TIMESTAMP}, 
+      #{modidate,jdbcType=TIMESTAMP}, #{flagdeleted,jdbcType=VARCHAR}, #{usertype,jdbcType=INTEGER}, 
+      #{device,jdbcType=VARCHAR}, #{userid,jdbcType=VARCHAR}, #{channelid,jdbcType=VARCHAR}, 
+      #{flagbind,jdbcType=BIT}, #{sid,jdbcType=VARCHAR}, #{sidtoken,jdbcType=VARCHAR}, 
+      #{subid,jdbcType=VARCHAR}, #{subtoken,jdbcType=VARCHAR}, #{butlerstyle,jdbcType=VARCHAR}, 
+      #{wxopenid,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.kingtree.search.entity.TaSystemUser" >
+    insert into ta_systemuser
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="uid != null" >
+        uid,
+      </if>
+      <if test="comid != null" >
+        comid,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="username != null" >
+        username,
+      </if>
+      <if test="password != null" >
+        password,
+      </if>
+      <if test="chname != null" >
+        chname,
+      </if>
+      <if test="spell != null" >
+        spell,
+      </if>
+      <if test="email != null" >
+        email,
+      </if>
+      <if test="mobile != null" >
+        mobile,
+      </if>
+      <if test="sphone != null" >
+        sphone,
+      </if>
+      <if test="adress != null" >
+        adress,
+      </if>
+      <if test="isadmin != null" >
+        isadmin,
+      </if>
+      <if test="isuse != null" >
+        isuse,
+      </if>
+      <if test="createdate != null" >
+        createdate,
+      </if>
+      <if test="modidate != null" >
+        modidate,
+      </if>
+      <if test="flagdeleted != null" >
+        flagdeleted,
+      </if>
+      <if test="usertype != null" >
+        usertype,
+      </if>
+      <if test="device != null" >
+        device,
+      </if>
+      <if test="userid != null" >
+        userid,
+      </if>
+      <if test="channelid != null" >
+        channelid,
+      </if>
+      <if test="flagbind != null" >
+        flagbind,
+      </if>
+      <if test="sid != null" >
+        sid,
+      </if>
+      <if test="sidtoken != null" >
+        sidtoken,
+      </if>
+      <if test="subid != null" >
+        subid,
+      </if>
+      <if test="subtoken != null" >
+        subtoken,
+      </if>
+      <if test="butlerstyle != null" >
+        butlerstyle,
+      </if>
+      <if test="wxopenid != null" >
+        wxopenid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="uid != null" >
+        #{uid,jdbcType=VARCHAR},
+      </if>
+      <if test="comid != null" >
+        #{comid,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="username != null" >
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="chname != null" >
+        #{chname,jdbcType=VARCHAR},
+      </if>
+      <if test="spell != null" >
+        #{spell,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null" >
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="sphone != null" >
+        #{sphone,jdbcType=VARCHAR},
+      </if>
+      <if test="adress != null" >
+        #{adress,jdbcType=VARCHAR},
+      </if>
+      <if test="isadmin != null" >
+        #{isadmin,jdbcType=VARCHAR},
+      </if>
+      <if test="isuse != null" >
+        #{isuse,jdbcType=VARCHAR},
+      </if>
+      <if test="createdate != null" >
+        #{createdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modidate != null" >
+        #{modidate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="flagdeleted != null" >
+        #{flagdeleted,jdbcType=VARCHAR},
+      </if>
+      <if test="usertype != null" >
+        #{usertype,jdbcType=INTEGER},
+      </if>
+      <if test="device != null" >
+        #{device,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null" >
+        #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="channelid != null" >
+        #{channelid,jdbcType=VARCHAR},
+      </if>
+      <if test="flagbind != null" >
+        #{flagbind,jdbcType=BIT},
+      </if>
+      <if test="sid != null" >
+        #{sid,jdbcType=VARCHAR},
+      </if>
+      <if test="sidtoken != null" >
+        #{sidtoken,jdbcType=VARCHAR},
+      </if>
+      <if test="subid != null" >
+        #{subid,jdbcType=VARCHAR},
+      </if>
+      <if test="subtoken != null" >
+        #{subtoken,jdbcType=VARCHAR},
+      </if>
+      <if test="butlerstyle != null" >
+        #{butlerstyle,jdbcType=VARCHAR},
+      </if>
+      <if test="wxopenid != null" >
+        #{wxopenid,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.kingtree.search.entity.TaSystemUser" >
+    update ta_systemuser
+    <set >
+      <if test="comid != null" >
+        comid = #{comid,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        type = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        sex = #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="username != null" >
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="chname != null" >
+        chname = #{chname,jdbcType=VARCHAR},
+      </if>
+      <if test="spell != null" >
+        spell = #{spell,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null" >
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="sphone != null" >
+        sphone = #{sphone,jdbcType=VARCHAR},
+      </if>
+      <if test="adress != null" >
+        adress = #{adress,jdbcType=VARCHAR},
+      </if>
+      <if test="isadmin != null" >
+        isadmin = #{isadmin,jdbcType=VARCHAR},
+      </if>
+      <if test="isuse != null" >
+        isuse = #{isuse,jdbcType=VARCHAR},
+      </if>
+      <if test="createdate != null" >
+        createdate = #{createdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modidate != null" >
+        modidate = #{modidate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="flagdeleted != null" >
+        flagdeleted = #{flagdeleted,jdbcType=VARCHAR},
+      </if>
+      <if test="usertype != null" >
+        usertype = #{usertype,jdbcType=INTEGER},
+      </if>
+      <if test="device != null" >
+        device = #{device,jdbcType=VARCHAR},
+      </if>
+      <if test="userid != null" >
+        userid = #{userid,jdbcType=VARCHAR},
+      </if>
+      <if test="channelid != null" >
+        channelid = #{channelid,jdbcType=VARCHAR},
+      </if>
+      <if test="flagbind != null" >
+        flagbind = #{flagbind,jdbcType=BIT},
+      </if>
+      <if test="sid != null" >
+        sid = #{sid,jdbcType=VARCHAR},
+      </if>
+      <if test="sidtoken != null" >
+        sidtoken = #{sidtoken,jdbcType=VARCHAR},
+      </if>
+      <if test="subid != null" >
+        subid = #{subid,jdbcType=VARCHAR},
+      </if>
+      <if test="subtoken != null" >
+        subtoken = #{subtoken,jdbcType=VARCHAR},
+      </if>
+      <if test="butlerstyle != null" >
+        butlerstyle = #{butlerstyle,jdbcType=VARCHAR},
+      </if>
+      <if test="wxopenid != null" >
+        wxopenid = #{wxopenid,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where uid = #{uid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.kingtree.search.entity.TaSystemUser" >
+    update ta_systemuser
+    set comid = #{comid,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=VARCHAR},
+      username = #{username,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      chname = #{chname,jdbcType=VARCHAR},
+      spell = #{spell,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      sphone = #{sphone,jdbcType=VARCHAR},
+      adress = #{adress,jdbcType=VARCHAR},
+      isadmin = #{isadmin,jdbcType=VARCHAR},
+      isuse = #{isuse,jdbcType=VARCHAR},
+      createdate = #{createdate,jdbcType=TIMESTAMP},
+      modidate = #{modidate,jdbcType=TIMESTAMP},
+      flagdeleted = #{flagdeleted,jdbcType=VARCHAR},
+      usertype = #{usertype,jdbcType=INTEGER},
+      device = #{device,jdbcType=VARCHAR},
+      userid = #{userid,jdbcType=VARCHAR},
+      channelid = #{channelid,jdbcType=VARCHAR},
+      flagbind = #{flagbind,jdbcType=BIT},
+      sid = #{sid,jdbcType=VARCHAR},
+      sidtoken = #{sidtoken,jdbcType=VARCHAR},
+      subid = #{subid,jdbcType=VARCHAR},
+      subtoken = #{subtoken,jdbcType=VARCHAR},
+      butlerstyle = #{butlerstyle,jdbcType=VARCHAR},
+      wxopenid = #{wxopenid,jdbcType=VARCHAR}
+    where uid = #{uid,jdbcType=VARCHAR}
+  </update>
+</mapper>

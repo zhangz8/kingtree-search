@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<second_hand_house_refresh_list xmlns="http://www.pinganfang.com/second_hand_house_refresh">
+    <second_hand_house_refresh>
+        <id>1</id>ta_house.houseid
+        <user_id>1001</user_id>ta_systemuser.uid
+    </second_hand_house_refresh>
+    <second_hand_house_refresh>
+        <id>2</id>
+        <user_id>2002</user_id>
+    </second_hand_house_refresh>
+</second_hand_house_refresh_list>

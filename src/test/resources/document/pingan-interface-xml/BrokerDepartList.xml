@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<broker_department_list xmlns="http://www.pinganfang.com/broker_department">
+    <broker_department>
+        <dept_id>11</dept_id>ta_picearea.areaid
+        <name>瑞平路分店</name>ta_picearea.areaname
+        <dept_address>徐汇区瑞平路</dept_address>ta_department.address
+        <company_id>1</company_id>ta_company.comid
+        <parent_dept_id>0</parent_dept_id>ta_department.pid
+    </broker_department>
+    <broker_department>
+        <dept_id>22</dept_id>
+        <name>东安路分店</name>
+        <company_id>2</company_id>
+        <parent_dept_id>1</parent_dept_id>
+    </broker_department>
+</broker_department_list>

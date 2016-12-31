@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<broker_list xmlns="http://www.pinganfang.com/broker">
+    <broker>
+        <user_id>11111111</user_id>ta_systemuser.uid
+        <user_name>经纪人1</user_name>ta_systemuser.username
+        <user_mobile>13564789950</user_mobile>ta_systemuser.mobile
+        <user_bankcard_no>111111</user_bankcard_no>
+        <user_card_no>1111111</user_card_no>ta_emplyee.idcard
+        <city_name>上海</city_name>ta_department.cityid/ta_area.area.id/areaname
+        <area_name>浦东</area_name>ta_department.piceareaid/ta_picearea.dsid/ta_dstrict.dsid/dstrictname
+        <block_name>北蔡</block_name>ta_picearea.areaname
+        <company_id>1111</company_id>ta_company.comid
+        <store_id>11111</store_id>ta_picearea.areaid
+    </broker>
+    <broker>
+        <user_id>22222222</user_id>
+        <user_name>经纪人1</user_name>
+        <user_mobile>13564789951</user_mobile>
+        <user_card_no>2222222</user_card_no>
+        <city_name>北京</city_name>
+        <area_name>朝阳</area_name>
+        <block_name>三里屯</block_name>
+        <company_id>2222</company_id>
+        <store_id>22222</store_id>
+    </broker>
+</broker_list>

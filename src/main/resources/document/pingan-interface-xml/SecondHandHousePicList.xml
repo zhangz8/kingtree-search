@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<second_hand_house_pic_list xmlns="http://www.pinganfang.com/second_hand_house_pics">
+    <second_hand_house_pic>
+        <image_id>233322323</image_id>无
+        <pic_type>1</pic_type>
+        <url>http://www.google.com/some.jpg</url>ta_house.coverphoto
+        <house_id>1</house_id>ta_house.houseid
+    </second_hand_house_pic>
+    <second_hand_house_pic>
+        <image_id>3222</image_id>无
+        <pic_type>2</pic_type>
+        <url>http://www.google.co.jp/another.gif</url>ta_house.houseid/ta_attachment.belongid/
+																		ta_attachment.phototype			===>ta_attachment.attachurl
+																		ta_reference.id
+        <house_id>2</house_id>ta_house.houseid
+    </second_hand_house_pic>
+    <second_hand_house_pic>
+        <image_id>233322323</image_id>无
+        <pic_type>3</pic_type>平定定义常量类
+        <url>http://www.google.com/some.jpg</url>ta_house.estid/ta_estate.estateid/coverphoto
+        <house_id>1</house_id>ta_house.houseid
+    </second_hand_house_pic>	
+</second_hand_house_pic_list>
